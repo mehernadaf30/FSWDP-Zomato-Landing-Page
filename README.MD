@@ -3,6 +3,5 @@
 # Done with first commit.
 Edited in github
 
-## Set up created here for our appln.
 
 ## Set up created here for our application.
