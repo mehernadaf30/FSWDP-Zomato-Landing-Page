@@ -1,0 +1,91 @@
+*
+/*This * is used for entire screen*/
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*And we are applying the styles to hero section where at background there is zomato image*/ 
+.hero__section
+{
+     background:url(./images/heroSectionBackground.png);
+     background-size:cover;
+     background-position:center;
+     min-height:60vh;
+}
+
+/*Here in this navigation bar we have links to which we are providing styles*/
+.navbar
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:65px;
+    padding: 16px 48px;
+    
+}
+
+/*Here we are providing styles to our links text*/
+.navbar a
+{
+ 
+    color:white;
+    /*In order to remove the line or underline from the Get the App,Investor Relations,Add Restaurant.Login and Sign up
+    USE text-decoration:none  this will apply text-decoration as none*/
+    text-decoration:none;
+
+
+}
+
+/*This is also used for nav bar where grouped links are therein html like Investor Relations,Add Restaurant,Login,Sign up*/ 
+.navbar__menu_container
+{
+    display:flex;
+    gap:18px;
+}
+
+.navbar__menu_container .user_icon
+{
+    height:25px;   
+    width:25px;
+    border:2px solid white;
+    border-radius:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /*As we can see that the user login logo is available for zomato mobile app but not in desktop app*/
+    /*So in order to hide or not show the user icon use display as none [display:none]*/
+    display:none;
+   
+}
+
+/*this is used so in order to set the criteria that when the screen is of type mobile or less then the given pixel(400px) or e=when the screen is adjusted then i want the user logo*/
+/*screen size is from  0 to 600px i.e smaller /mobile screen*/
+@media only screen and (max-width:600px)   
+   {   
+      .navbar__menu_container .user_icon
+         {
+            /*Here check theis logo will appear now cause before this style we have provided the display:none 
+            but now it is changed into the display called flex */ 
+            display:flex; 
+         }        
+
+         /*and one thing after executing this display flex in laptop and after inspect the output is somehow conjusted like mixed 
+         so we have one option that when the screen size is 400px then i want to hide this Investor relation,Login,Sign up etc */
+          
+            .link
+               {
+                 display:none;
+
+               }
+         /*with this the background image height is increased nothing more and it is given in this way 
+         that when screen is for smaller/mobile device background-image will be given 80vh means it means 
+          background-image will now cover more area*/
+                    .hero__section
+                      {
+                         height: 80vh;
+                      }
+   }
+
