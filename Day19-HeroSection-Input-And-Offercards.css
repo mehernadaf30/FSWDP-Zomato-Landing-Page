@@ -63,67 +63,69 @@
 }
 
 /*This section is part of 20 day hero section input so input things are here*/
-/* This section is used for alignment of all input boxes like zomato logo,user serach box,loaction box and heading*/
-  .hero__section-container
-    {
-      display:flex;
-      flex-direction:column;    
-      align-items:center;
-      justify-content:center;
-      gap:20px;
-      height:calc(65vh-65px);
-    }
+                  /* This section is used for alignment of all input boxes like zomato logo,user serach box,loaction box and heading*/
+                  .hero__section-container
+                  {
+                      display:flex;
+                      flex-direction:column;    
+                      align-items:center;
+                      justify-content:center;
+                      gap:20px;
+                      height:calc(65vh-65px);
+                  }
 
-/*This section is used for zomato logo*/
-  .hero__section_logo
-    {
-      width:200px;
-      height:40px;     
-    }
+                    /*This section is used for zomato logo*/
+                  .hero__section_logo
+                  {
+                      width:200px;
+                      height:40px;     
 
-/*This section is for heading */
-  .hero__section_title
-    {
-      color:white;
-      text-align:center;
-      font-size:30px;
-      font-weight:380;
-    }
+                  }
 
-/*This is input container section*/
-  .hero__section_input_container
-    {
-      background-color:white;
-      padding: 10px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      width:50%;
-      border-radius:10px;
-    }
+                    /*This section is for heading */
+                  .hero__section_title
+                  {
+                    color:white;
+                    text-align:center;
+                    font-size:30px;
+                    font-weight:380;
+                  }
 
-/*This is input search and input location container grouping*/
-  .input_container_location,
-  .input_container_search
-    {
-      padding:5px;
-      border:none;
-      outline:none;
-    }
+                  /*This is input container section*/
+                  .hero__section_input_container
+                  {
 
-/*This is location input box styles*/
-  .input_container_location
-    {
-      width:35%;
-      border-right:2px solid #e0e0e0;
-    }
+                    background-color:white;
+                    padding: 10px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    gap:10px;
+                    width:50%;
+                    border-radius:10px;
+                  }
 
-/*This is search input box styles*/   
-  .input_container_search
-    {
-      width:65%
-    }
+                  /*This is input search and input location container grouping*/
+                  .input_container_location,
+                  .input_container_search
+                  {
+                        padding:5px;
+                        border:none;
+                        outline:none;
+                  }
+
+                  /*This is location input box styles*/
+                  .input_container_location
+                  {
+                    width:35%;
+                    border-right:2px solid #e0e0e0;
+                  }
+
+                  /*This is search input box styles*/   
+                  .input_container_search
+                  {
+                    width:65%
+                  }
 
 /*this is used so in order to set the criteria that when the screen is of type mobile or less then the given pixel(400px) or e=when the screen is adjusted then i want the user logo*/
 /*screen size is from  0 to 600px i.e smaller /mobile screen*/
@@ -149,62 +151,63 @@ so we have one option that when the screen size is 400px then i want to hide thi
 /*with this the background image height is increased nothing more and it is given in this way 
 that when screen is for smaller/mobile device background-image will be given 80vh means it means 
 background-image will now cover more area*/
-  .hero__section
-    {
-      height: 80vh;
-    }
+    .hero__section
+          {
+              height: 80vh;
+          }
 
-/*This is taken in order to make application responsive and afetr adjustment u can see that o/p will change*/
-  .hero__section_container
-    {
-      flex-direction:column;
-      background-color:transparent;
-      width:100%;
-    }
 
-/*this is used for two input boxes location and search box*/
-  .input_container_location,
-  .input_container_search
-    {
-      padding:18px;
-      border-radius:10px;
-      width:98%;
-    }
+          /*This is taken in order to make application responsive and afetr adjustment u can see that o/p will change*/
+          .hero__section_container
+          {
+              flex-direction:column;
+              background-color:transparent;
+              width:100%;
+          }
 
-/*this is hero section container height*/
-  .hero_section_container
-    {
-      height:calc(80vh-40px);
-    }
-       
-    .hero__section_title
-      {
-        font-size: 18px;
-        width:95%;
+      /*this is used for two input boxes location and search box*/
+      .input_container_location,
+      .input_container_search
+          {
+
+                padding:18px;
+                border-radius:10px;
+                width:98%;
+          }
+
+        /*this is hero section container height*/
+      .hero_section_container
+          {
+            height:calc(80vh-40px);
+          }
+
+        .hero__section_title
+        {
+          font-size: 18px;
+          width:95%;
+        }
       }
-  }
   
-  /*Out of media queries*/
-  /*This is section 2 styles*/
-  .container 
-  {
-    margin:3rem auto;
-    width:91%;
-  }
-  
-  /*This is section 2 styles*/
-    .we__offer
-      {
+      /*Out of media queries*/
+       /*This is section 2 styles*/
+       .container 
+       {
+
+        margin:3rem auto;
+        width:91%;
+       }
+       /*This is section 2 styles*/
+       .we__offer
+       {
         display:flex;
         flex-wrap:wrap;
         gap:0.5rem;
         align-items:center;
         justify-content:center;
         
-      }
-    
-  /*THis section is for image styles*/
-      .we__offer_card
+       }
+       /*THis section is for image styles*/
+       .we__offer_card
        {
         border-radius: 10px;
         /*This is optional*/
@@ -223,8 +226,8 @@ background-image will now cover more area*/
         transform: scale(1.1); 
        }
         
-  /*This section is for image section*/
-      .we__offer_card img
+      /*This section is for image section*/
+       .we__offer_card img
        {
             width:100%;
             height:170px;
