@@ -1,0 +1,681 @@
+/********************************************Day18 CSS Code FOR HERO SECTION***************************/
+  /*This * is used for entire screen*/
+  *
+  {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+/*And we are applying the styles to hero section where at background there is zomato image*/ 
+.hero__section
+{
+    background:url(./images/heroSectionBackground.png);
+    background-size:cover;
+    background-position:center;
+    min-height:60vh;
+}
+
+/*Here in this navigation bar we have links to which we are providing styles*/
+  .navbar
+    {
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      height:65px;
+      padding: 16px 48px;
+    }
+
+/*Here we are providing styles to our links text*/
+  .navbar a
+    {
+      color:white;
+      /*In order to remove the line or underline from the Get the App,Investor Relations,Add Restaurant.Login and Sign up
+      USE text-decoration:none  this will apply text-decoration as none*/
+      text-decoration:none;
+    }
+
+/*This is also used for nav bar where grouped links are therein html like Investor Relations,Add Restaurant,Login,Sign up*/ 
+  .navbar__menu_container
+    {
+      display:flex;
+      gap:18px;
+    }
+
+/*This is used for user symbol */
+  .navbar__menu_container .user_icon
+   {
+      height:25px;   
+      width:25px;
+      border:2px solid white;
+      border-radius:100%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      /*As we can see that the user login logo is available for zomato mobile app but not in desktop app*/
+      /*So in order to hide or not show the user icon use display as none [display:none]*/
+      display:none;
+   }
+
+/*DAY 19 CSS CODE  FOR INPUT FIELD /
+/*This section is part of 19 day hero section input so input things are here*/
+/* This section is used for alignment of all input boxes like zomato logo,user serach box,loaction box and heading*/
+.hero__section-container
+  {
+    display:flex;
+    flex-direction:column;    
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    height:calc(65vh-65px);
+  }
+
+/*This section is used for zomato logo*/
+.hero__section_logo
+  {
+    width:200px;
+    height:40px;     
+  }
+
+/*This section is for heading */
+.hero__section_title
+  {
+    color:white;
+    text-align:center;
+    font-size:30px;
+    font-weight:380;
+  }
+
+/*This is input container section*/
+.hero__section_input_container
+  {
+    background-color:white;
+    padding: 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:50%;
+    border-radius:10px;
+  }
+
+/*This is input search and input location container grouping*/
+  .input_container_location,
+  .input_container_search
+    {
+      padding:5px;
+      border:none;
+      outline:none;
+    }
+
+/*This is location input box styles*/
+.input_container_location
+  {
+    width:35%;
+    border-right:2px solid #e0e0e0;
+  }
+
+/*This is search input box styles*/   
+.input_container_search
+  {
+    width:65%
+  }
+
+/*DAY19 CSS CODE FOR OFFERCARDS*/
+/*Day 19 CSS Code for OfferCards*/ 
+/*This is section 2 styles*/
+.container 
+  {
+    margin:3rem auto;
+    width:91%;
+  }
+  
+/*This is section 2 styles*/
+.we__offer
+  {
+      display:flex;
+      flex-wrap:wrap;
+      gap:0.5rem;
+      align-items:center;
+      justify-content:center;
+  }
+   
+/*THis section is for image styles*/
+  .we__offer_card
+    {
+      border-radius: 10px;
+      /*This is optional*/
+      /*background-color:aqua;*/
+      /*it should not overflow your cart that's why it is taken*/ 
+       overflow:hidden; 
+       border:1px solid #e0e0e0;
+       transition:all 3s ease; 
+      /*this is used for transition*/
+       margin-right:12px;
+    }
+
+   .we__offer_card:hover
+   {
+    /*This is used for zoom in*/
+    transform: scale(1.1); 
+   }
+    
+/*This section is for image section*/
+  .we__offer_card img
+    {
+        width:100%;
+        height:170px;
+        object-position:center;
+    }
+
+   .we__offer_content
+   {
+    padding:10px;
+   }   
+
+   .we__offer_content h2
+   {
+        font-size:20px;
+        font-weight:400;
+   }
+
+   .we__offer_content p
+   {
+    font-size:12.5px;
+   }
+
+
+/*DAY20 CSS COLLECTION CODE FOR COLLECTIONS*/
+/*DAY 20 CSS CODE*/
+/*Collection section started from here*/
+/*You know what in this class name [container collections]:container is parent and collections is child*/
+/*This will apply styles to  h1*/
+.collections h1
+  {
+    font-weight: 600;
+    margin-left:58px;   /*changed line*/ 
+  }
+
+/*This will apply styles to sub-heading span*/
+.collections .sub__heading_container
+  {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:3rem;
+    margin-left:58px; /*changed line*/
+  }
+
+/*This will apply styles to 2nd span use nth-child(number of child) to apply styles to various childs*/
+.sub__heading_container span:nth-child(2)
+  {
+    color:#ff7e8b;
+    font-size: 13px;
+    cursor:pointer;
+  }
+
+/*This is used for card container class*/
+.collections_card_container
+  {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      flex-wrap: wrap;                        /*It is used for responsiveness*/
+      gap:0.5rem;                            /*It is for space between content*/
+      margin-top:1.25rem;                      /*Margin from top */
+
+  }
+
+/*this section is used for all 4 cards styles*/
+.collections_card_container .card
+  {
+    height:300px;
+    min-width:240px;
+    background-size: cover;
+    background-position: center;                      
+    border-radius: 10px;
+    position: relative; 
+  }
+
+/*This is used for specific cards background-image*/
+.card1
+  {
+    background-image: url('\images/collection1.jpg');
+  }
+
+  .card2
+  {
+    background-image: url('\images/collection2.jpg');
+  }
+
+  .card3
+  {
+    background-image: url('\images/collection3.jpg');
+  }
+
+  .card4
+  {
+    background-image: url('\images/collection4.jpg');
+  }
+
+/*Lets keep it for afterwords as it is not working
+.overlay
+  {
+    width:100%;
+    height:100%;
+    /*this is taken to take positions like top,left,bottom,right but to take the position:absolute first take position:relative before this position:absolute because absolute should be enclosed with relative
+    position:absolute;     
+    top:0;
+    left:0;
+    border-radius: 10px;
+    background:linear-gradient
+    (0deg
+       rgba(0,0,0,0.9)  0%,
+       rgba(0,0,0,0.05) 50%,
+       rgba(0,0,0,0.05) 85%,
+    );
+    
+  }
+  */      
+
+  .collections_card_container .card .content
+  {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color:white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .content h4
+  {
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+
+/*DAY20 CSS CODE FOR GET THE APP*/
+  /*DAY 20 CSS CODE*/
+  /*Get the app section*/
+  /*This styles the get__the_app container all things*/
+  .get__the_app
+  {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255,251,247);
+    width:100%;
+    padding:3rem 6rem;
+  }
+
+.get__the_app .semiContainer
+  {
+    width:60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  }
+
+.get__the_app .semiContainer .left
+  {
+    flex:2;
+  }
+
+.get__the_app .semiContainer .left img
+  {
+    width:100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.get__the_app .semiContainer .right
+  {
+    flex:3;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+  }
+
+.right h1
+ {
+     font-weight: 400;
+     font-size: 2rem;
+ }
+
+.right p
+ {
+     font-size:0.9rem;
+ }
+
+.right .radio__button_container
+  {
+    /*because of this email and phone come side by side*/
+    display:flex;
+    align-items: center;
+    /*This will take space between email and phone*/
+    gap:1rem;
+ }
+
+.right .radio__button_container div
+ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*This is used for gap in between radio button and label*/
+  gap: 10px;  
+ }
+
+.right .radio__button_container div input
+ {
+  height: 15px;
+  width: 15px;
+  accent-color: rgb(239,79,95);
+ }
+
+.right .input_container
+ {
+  display:flex;
+  gap:0.5rem;
+
+ }
+
+.input_container 
+ {
+  flex-wrap: flex;
+ }
+ 
+.input_container button
+ {
+   padding: 10px 12px;
+ }
+
+.input_container input
+ {
+  flex:auto;
+  border:1.5px solid gray;
+  outline:none;
+  border-radius: 5px;
+   
+ }
+
+.input_container button
+ {
+  border:none;
+  background-color: rgb(239,79,95);
+  color:white;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+.right .download__app_container
+   {
+     display: flex;
+     flex-direction: column;
+     gap: 0.7rem;
+   }
+.right .download__app_container h5
+   {
+     font-weight: 400;
+     color:gray;
+   }
+ 
+  .right .download__app_container div
+   {
+      display: flex;
+      gap:1rem; 
+   }
+
+  .right .download__app_container div img
+   {
+     width: 35%;
+   }
+
+/*DAY 21 CSS CODE FOR FOOTER SECTION AND COMPLETED THE PROJECT*/
+
+.footer
+{
+  width:100%
+}  
+
+.footer_section1
+{
+  display:flex; /*items will move to side using flex*/
+  flex-wrap: wrap;
+  align-items: center; /*for column*/
+  justify-content:space-between; /*for row*/
+  width:80%;
+  margin:auto; /*leave space from left side*/
+}
+
+.footer_section1 img
+{
+ width:130px;
+}
+
+.section__buttonContainer
+{
+display:flex;
+gap:1rem;
+}
+
+.section__buttonContainer button
+{
+padding:5px;
+width:90px;
+border:1px solid gray;
+border-radius: 5px;
+/*before this the button was in gray color*/
+background-color:transparent; /*Now button will be in white color using transparent*/
+display:flex;
+align-items: center;
+justify-content: center;
+gap:12px;
+cursor:pointer;
+}
+
+.navigation_container
+{
+/*We will not take flex today we will go with grid 
+both are used for display purpose but have some difference*/
+/*display:flex;*/
+display:grid;
+/*This works fine but we have another method*/
+/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+/*This line meaning is that 5 times,1fr[width of columns*/
+grid-template-columns:repeat(5,1fr);
+width:80%;
+margin: auto;
+/*gap between data*/
+gap:1rem;
+padding: 3rem 0;
+}
+
+.link__container
+{
+display: flex;
+flex-direction: column;
+gap:5px;
+}
+
+.link__container h5
+{
+font-weight: 500;
+font-size:15px;
+margin-bottom: 5px;
+letter-spacing: 0.8px;
+}
+
+.footer_link
+{
+text-decoration: none;
+color:grey;
+font-size: 12.5px;
+}
+
+.footer_link:hover
+{
+color:black;
+}
+
+/*This is for social link symbols*/
+/*The flow is in like section__links_container---->button tag*/
+.section__links_container button
+{
+background-color: black;
+border:none;
+width: 25px;
+height: 25px;
+border-radius: 30px;
+/*color:white;*/
+cursor:pointer;
+}
+
+/*The flow is in like section__links_container---->button tag---->icon tag*/
+.section__links_container button i
+{
+color:white;
+/*this is for inside icon*/
+font-size: 13px;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer__section_logos
+{
+width:100%;
+}
+
+.disclaimer
+{
+width:82%;
+color:gray;
+margin:auto;
+margin-left:120px;
+border-top:1px solid gray;
+padding-top:1.5rem;
+font-size:13px;
+}
+
+/**************MEDIA QUERIES FOR HERO SECTION AND INPUT CONTAINER***********/
+
+/*MEDIA QUERIES FOR DAY18,DAY19*/
+/*this is used so in order to set the criteria that when the screen is of type mobile or less then the given pixel(400px) or e=when the screen is adjusted then i want the user logo*/
+/*screen size is from  0 to 600px i.e smaller /mobile screen*/
+@media only screen and (max-width:600px)   
+{   
+  .navbar__menu_container .user_icon
+    {
+      /*Here check theis logo will appear now cause before this style we have provided the display:none 
+      but now it is changed into the display called flex */ 
+      display:flex; 
+    }        
+
+/*and one thing after executing this display flex in laptop and after inspect the output is somehow conjusted like mixed 
+so we have one option that when the screen size is 400px then i want to hide this Investor relation,Login,Sign up etc */
+.link
+{
+  display:none;
+
+}
+
+/*with this the background image height is increased nothing more and it is given in this way 
+that when screen is for smaller/mobile device background-image will be given 80vh means it means 
+background-image will now cover more area*/
+.hero__section
+{
+  height: 80vh;
+}
+
+/*This is taken in order to make application responsive and afetr adjustment u can see that o/p will change*/
+.hero__section_container
+{
+  flex-direction:column;
+  background-color:transparent;
+  width:100%;
+}
+
+/*this is used for two input boxes location and search box*/
+.input_container_location,
+.input_container_search
+{
+
+    padding:18px;
+    border-radius:10px;
+    width:98%;
+}
+
+/*this is hero section container height*/
+.hero_section_container
+{
+    height:calc(80vh-40px);
+}
+
+.hero__section_title
+{
+    font-size: 18px;
+    width:95%;
+}
+ 
+}
+
+/*************************MEDIA QUERIES FOR GET-THE-APP SECTION*******************/
+/*FOR DAY20 GET-THE-APP SECTION*/
+@media only screen and (max-width:1300px)
+{
+.get__the_app .semiContainer .left,
+.get__the_app .semiContainer .right
+    {
+      flex:1;
+    }
+
+  .get__the_app .semiContainer
+    {
+      width:80%
+    }
+}
+@media only screen and (max-width:900px)
+  {
+    .get__the_app 
+    {
+       padding:2rem 0;
+    }
+
+    .get__the_app .semiContainer
+    {
+      width:95%;
+      flex-direction: column;
+    }
+  }
+
+/*******************************MEDIA QUERIES FOR FOOTER SECTION******************************************/
+@media only screen and (max-width:900px)
+{
+      .navigation_container
+      {
+          grid-template-columns: repeat(3,1fr);  /*i want 3 block each of 1 fragment*/
+      }
+}
+
+@media only screen and (max-width:500px)
+{
+    .navigation_container
+    {
+        grid-template-columns: repeat(2,1fr);   /*i want 2 block each of 1 fragment*/
+    }
+}
+
+@media only screen and (max-width:350px)
+{
+    .navigation_container
+    {
+        grid-template-columns: repeat(1,1fr);  /*i want 1 block each of 1 fragment*/
+    }
+}
+
